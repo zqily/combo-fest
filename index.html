@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSB Combo-fest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-background: #1a1a1a;
+            --dark-surface: #262626;
+            --text-light: #e0e0e0;
+            --text-muted: #b0b0b0;
+            --accent-red: #e74c3c; /* A vibrant, modern red */
+            --accent-red-hover: #c0392b; /* Slightly darker for hover */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-background);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to top, then content pushes down */
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 40px 20px; /* Add some padding for small screens */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        .container {
+            background-color: var(--dark-surface);
+            border-radius: 12px;
+            padding: 40px 60px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            color: var(--accent-red);
+            margin-bottom: 0.1em;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        header .host {
+            font-size: 1.1em;
+            color: var(--text-muted);
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        header .host a {
+            color: var(--accent-red);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        header .host a:hover {
+            color: var(--accent-red-hover);
+            text-decoration: underline;
+        }
+
+        .criteria-section {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .criteria-item {
+            margin-bottom: 30px;
+        }
+
+        .criteria-item h3 {
+            font-size: 1.8em;
+            color: var(--text-light);
+            margin-bottom: 10px;
+            font-weight: 600;
+            border-bottom: 2px solid var(--accent-red); /* Subtle accent under title */
+            padding-bottom: 5px;
+            display: inline-block; /* Make border-bottom fit content */
+            line-height: 1.2;
+        }
+
+        .criteria-item p {
+            font-size: 1.1em;
+            color: var(--text-light);
+            margin-top: 0;
+            font-weight: 300;
+        }
+
+        .criteria-item p strong {
+            color: var(--accent-red); /* Highlight the "What we look for" */
+            font-weight: 600;
+        }
+
+        .submit-button {
+            display: inline-block;
+            background-color: var(--accent-red);
+            color: var(--text-light);
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 50px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            letter-spacing: 0.05em;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .submit-button:hover {
+            background-color: var(--accent-red-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+                margin: 20px 0; /* Add margin for mobile view */
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header .host {
+                font-size: 1em;
+            }
+
+            .criteria-item h3 {
+                font-size: 1.5em;
+            }
+
+            .criteria-item p {
+                font-size: 1em;
+            }
+
+            .submit-button {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 25px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TSB Combo-fest</h1>
+            <p class="host">(Hosted by <a href="https://www.youtube.com/@Zqily" target="_blank" rel="noopener noreferrer">zqil</a> & <a href="https://www.youtube.com/@hikuimori" target="_blank" rel="noopener noreferrer">sai</a>)</p>
+        </header>
+
+        <section class="criteria-section">
+            <div class="criteria-item">
+                <h3>Flashiness</h3>
+                <p>
+                    <strong>What we look for:</strong> How visually impressive and exciting the combo is. This means a good number of varied and cool transitions and techs. Flashy combos are fast-paced, stunning, and really satisfying to watch.
+                </p>
+            </div>
+
+            <div class="criteria-item">
+                <h3>Cleanness</h3>
+                <p>
+                    <strong>What we look for:</strong> How precise and well-executed the combo is. We want to see combos done perfectly, without any wasted or pointless movements. Every action should have a clear reason, avoiding unnecessary "fluff".
+                </p>
+            </div>
+
+            <div class="criteria-item">
+                <h3>Flow</h3>
+                <p>
+                    <strong>What we look for:</strong> How smoothly the combo moves from one action to the next. Good-flowing combos connect naturally without awkward stops, or pauses. It should feel continuous.
+                </p>
+            </div>
+
+            <div class="criteria-item">
+                <h3>Creativity & Originality</h3>
+                <p>
+                    <strong>What we look for:</strong> How new and unique the combo is. We want to see combos that aren't commonly seen or rely only on widely known techs. High scores go to fresh ideas, unexpected ways to use moves, or new takes on established techniques. Show us something new that pushes the limits of what's expected in TSB.
+                </p>
+            </div>
+        </section>
+
+        <a href="http://discord.gg/guTq4922dm" target="_blank" rel="noopener noreferrer" class="submit-button">
+            Submit Your Combo Here!
+        </a>
+    </div>
+</body>
+</html>
